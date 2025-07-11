@@ -2,3 +2,6 @@
    to do so efficiently.  I would like to use this schema to demonstrate  how an LLM agent can navigate an interrelated schema autonomously, so place some  interesting edge case / problem in the data
    and pose a challenging human like question to find that problem.  Do this for 3 data challenges.  You can use sqlite or similar to keep it simple, maybe python?
 
+> I moved the database to a directory named `database` and asked an agent qustion 1, it didn't find customer id 250 unusual at all can you confirm it is?
+
+> create a commit with the script, done.txt, and challenge questions text.

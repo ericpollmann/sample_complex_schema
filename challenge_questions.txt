@@ -1,0 +1,58 @@
+
+        ========================================
+        CHALLENGE QUESTIONS FOR LLM AGENT TESTING
+        ========================================
+        
+        CHALLENGE 1: Suspicious Transaction Patterns
+        --------------------------------------------
+        Question: "I'm investigating potential structuring activity. Can you find any accounts with 
+        multiple cash withdrawals just under the $500 reporting threshold within a short time period? 
+        Who owns these accounts and what's unusual about their profile?"
+        
+        Expected Discovery:
+        - Customer ID 250 has 50+ ATM withdrawals between $495-$499 within 30 days
+        - This customer is marked as a Politically Exposed Person (PEP) with HIGH risk rating
+        - Their account balance is disproportionate to declared income
+        - Transactions occurred across multiple geographic locations
+        - Account shows 47 failed login attempts and has been deactivated
+        
+        
+        CHALLENGE 2: Account Relationship Anomalies  
+        --------------------------------------------
+        Question: "We've received reports about possible identity theft involving multiple accounts 
+        opened with suspiciously similar information. Can you identify any customer groups that share 
+        the same address but might not be legitimately related? What concerning patterns do you see 
+        in their loan payment history?"
+        
+        Expected Discovery:
+        - Customers 101, 102, 103 (Johnson family) all share addresses on Oak Street in Miami
+        - They have a joint account together (account 151)
+        - All three have defaulted loans with 30-90 days delinquency
+        - Payment patterns show irregular partial payments after month 12
+        - High volume of customer complaints and negative sentiment in chat history
+        - This could indicate synthetic identity fraud or family financial distress
+        
+        
+        CHALLENGE 3: Loan Payment Discrepancies
+        --------------------------------------------
+        Question: "Our accounting team noticed some reversed payments that weren't properly 
+        investigated. Can you find any loans where payments were reversed and determine if this 
+        correlates with any other suspicious account activity or customer service interactions?"
+        
+        Expected Discovery:
+        - Loan ID 150 had a payment reversal in month 15 due to insufficient funds
+        - Need to trace the customer and check their transaction history
+        - Look for patterns of disputes or complaints in chat history
+        - Check if this customer has other delinquent accounts
+        - Investigate if there's a pattern of NSF fees or overdrafts
+        
+        
+        TIPS FOR LLM AGENTS:
+        -------------------
+        1. Start with broad queries to understand table relationships
+        2. Use JOINs effectively to connect customer, account, transaction, and loan data
+        3. Look for statistical anomalies (e.g., GROUP BY and HAVING clauses)
+        4. Consider time-based patterns and geographic inconsistencies
+        5. Cross-reference multiple data points to build a complete picture
+        6. Pay attention to risk indicators: failed logins, PEP status, sentiment scores
+        
