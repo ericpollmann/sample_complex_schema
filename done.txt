@@ -1,0 +1,4 @@
+> Create a complex relational schema here with customers, accounts, users, banks, transactions, loans, payments, chat history -- populate with a few hundred or thousand rows of each, writing a script
+   to do so efficiently.  I would like to use this schema to demonstrate  how an LLM agent can navigate an interrelated schema autonomously, so place some  interesting edge case / problem in the data
+   and pose a challenging human like question to find that problem.  Do this for 3 data challenges.  You can use sqlite or similar to keep it simple, maybe python?
+
