@@ -5,3 +5,8 @@
 > I moved the database to a directory named `database` and asked an agent qustion 1, it didn't find customer id 250 unusual at all can you confirm it is?
 
 > create a commit with the script, done.txt, and challenge questions text.
+
+> Add a README
+
+> Commit and push changes
+
